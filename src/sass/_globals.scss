@@ -1,0 +1,45 @@
+@import url('https://fonts.cdnfonts.com/css/general-sans');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-size: 1em;
+  font-family: Roboto Mono;
+}
+
+h1,
+h2 {
+  font-family: 'general sans', sans-serif;
+}
+
+h1 {
+  width: 100%;
+  height: auto;
+  font-size: 7.8vw;
+  text-transform: uppercase;
+  font-weight: 500;
+  line-height: 1.1;
+  margin-bottom: 2rem;
+}
+
+h2 {
+  width: 100%;
+  height: auto;
+  font-weight: 400;
+  text-transform: uppercase;
+  line-height: 1.1;
+}
+
+p {
+  word-spacing: 0.5rem;
+}
