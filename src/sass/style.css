@@ -1,4 +1,5 @@
 @import url("https://fonts.cdnfonts.com/css/general-sans");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Roboto+Mono:wght@200;300;400;500&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -26,11 +27,13 @@ h2 {
 h1 {
   width: 100%;
   height: auto;
-  font-size: 7.8vw;
+  font-size: 7.6vw;
   text-transform: uppercase;
   font-weight: 500;
   line-height: 1.1;
   margin-bottom: 2rem;
+  position: relative;
+  z-index: 4;
 }
 
 h2 {
@@ -39,15 +42,86 @@ h2 {
   font-weight: 400;
   text-transform: uppercase;
   line-height: 1.1;
+  margin-bottom: 1rem;
+  font-size: 4rem;
 }
 
 p {
-  word-spacing: 0.5rem;
+  word-spacing: 0.3rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+.banner {
+  width: 100%;
+  height: 4em;
+  background-color: #000000;
+  position: absolute;
+  top: 0;
+  z-index: 0;
+}
+
+.navbar {
+  position: -webkit-sticky;
+  position: sticky;
+  z-index: 10;
+  top: 0;
+  width: 100%;
+  height: 4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: black;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(47%, black), color-stop(77%, rgba(0, 0, 0, 0.898233)), color-stop(90%, rgba(0, 0, 0, 0.780255)), to(rgba(0, 0, 0, 0.389806)));
+  background: linear-gradient(180deg, black 47%, rgba(0, 0, 0, 0.898233) 77%, rgba(0, 0, 0, 0.780255) 90%, rgba(0, 0, 0, 0.389806) 100%);
+  text-transform: uppercase;
+}
+
+.navbar__container {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 2em;
+}
+
+.navbar__container a {
+  color: #ffffff;
+}
+
+.navbar__links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navbar__link {
+  padding: 0 1rem;
+}
+
+.navbar__cta {
+  background-color: #f0e9d2;
+}
+
+.navbar__cta p {
+  color: black;
+  padding: 0.5rem 1rem;
 }
 
 .hero__section {
   width: 100%;
-  margin: 6rem 0;
+  margin: 6rem 0 0 0;
 }
 
 .hero__container {
@@ -72,21 +146,124 @@ p {
 }
 
 .hero__content h2 {
-  font-size: 4.2vw;
-  margin-bottom: 2rem;
+  font-size: 4.5vw;
+  margin-bottom: 1rem;
 }
 
 .hero__content p {
+  width: 65%;
+  font-size: 1.375rem;
+  color: #111111;
+  font-weight: 400;
+}
+
+.hero__text {
   width: 60%;
-  font-size: 1.575rem;
 }
 
 .hero__img {
-  width: 50%;
+  width: 40%;
 }
 
 .hero__img img {
   width: 100%;
   height: auto;
+  margin-top: -6rem;
+  position: relative;
+  z-index: 3;
+}
+
+.projects {
+  width: 100%;
+  background-color: #000000;
+  color: #ffffff;
+  margin-top: -4rem;
+  padding: 6rem 0;
+}
+
+.projects__container {
+  padding: 0 2em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.projects__text {
+  width: 50%;
+  margin-bottom: 4rem;
+}
+
+.projects__paragraph {
+  width: 70%;
+}
+
+.projects__grid {
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+}
+
+.projects__card {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.projects__card_container {
+  width: 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.projects__card_img {
+  width: 100%;
+}
+
+.projects__card_img img {
+  width: 100%;
+  height: auto;
+  border-radius: 20%;
+}
+
+.projects__title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #ffffff;
+  margin-top: 10px;
+}
+
+.projects__title h3 {
+  border-bottom: solid 2px white;
+}
+
+.projects__title p {
+  font-size: 11px;
+  margin-top: -2px;
 }
 /*# sourceMappingURL=style.css.map */

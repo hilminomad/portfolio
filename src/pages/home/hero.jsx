@@ -17,14 +17,9 @@ const Hero = () => {
                 Creativity
               </h2>
               <p>
-                I covert storytelling into websites.
-                <br />
-              </p>
-              <p>
-                My goal is to harmonize use aesthetics and captivating digital
-                experiences business objectives. I create captivating digital
-                experiences that enchant audiences while driving tangible
-                results.
+                I convert storytelling into websites. I aim to create visually
+                appealing digital experiences that assist you in achieving your
+                business goals.
               </p>
             </div>
             <div className='hero__img'>

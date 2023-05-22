@@ -1,7 +1,7 @@
 .hero {
   &__section {
     width: 100%;
-    margin: 6rem 0;
+    margin: 6rem 0 0 0;
   }
   &__container {
     padding: 0 2em;
@@ -13,19 +13,87 @@
     display: flex;
     justify-content: space-between;
     h2 {
-      font-size: 4.2vw;
-      margin-bottom: 2rem;
+      font-size: 4.5vw;
+      margin-bottom: 1rem;
     }
     p {
-      width: 60%;
-      font-size: 1.575rem;
+      width: 65%;
+      font-size: 1.375rem;
+      color: #111111;
+      font-weight: 400;
     }
   }
+  &__text {
+    width: 60%;
+  }
   &__img {
-    width: 50%;
+    width: 40%;
     img {
       width: 100%;
       height: auto;
+      margin-top: -6rem;
+      position: relative;
+      z-index: 3;
+    }
+  }
+}
+
+.projects {
+  width: 100%;
+  background-color: #000000;
+  color: #ffffff;
+  margin-top: -4rem;
+  padding: 6rem 0;
+  &__container {
+    padding: 0 2em;
+    display: flex;
+    flex-direction: column;
+  }
+  &__text {
+    width: 50%;
+    margin-bottom: 4rem;
+  }
+  &__paragraph {
+    width: 70%;
+  }
+  &__grid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  &__card {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__card_container {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &__card_img {
+    width: 100%;
+
+    img {
+      width: 100%;
+      height: auto;
+      border-radius: 20%;
+    }
+  }
+  &__title {
+    display: flex;
+    justify-content: center;
+    color: #ffffff;
+    margin-top: 10px;
+    h3 {
+      border-bottom: solid 2px white;
+    }
+    p {
+      font-size: 11px;
+      margin-top: -2px;
     }
   }
 }

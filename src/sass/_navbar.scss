@@ -1,0 +1,52 @@
+.banner {
+  width: 100%;
+  height: 4em;
+  background-color: #000000;
+  position: absolute;
+  top: 0;
+  z-index: 0;
+}
+
+.navbar {
+  position: sticky;
+  z-index: 10;
+  top: 0;
+  width: 100%;
+  height: 4rem;
+  display: flex;
+
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 1) 47%,
+    rgba(0, 0, 0, 0.8982327922006671) 77%,
+    rgba(0, 0, 0, 0.7802552641107795) 90%,
+    rgba(0, 0, 0, 0.3898058259085323) 100%
+  );
+
+  text-transform: uppercase;
+  &__container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2em;
+    a {
+      color: #ffffff;
+    }
+  }
+  &__links {
+    display: flex;
+    align-items: center;
+  }
+  &__link {
+    padding: 0 1rem;
+  }
+  &__cta {
+    background-color: #f0e9d2;
+    p {
+      color: black;
+      padding: 0.5rem 1rem;
+    }
+  }
+}
