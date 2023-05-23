@@ -39,7 +39,7 @@ h1 {
 h2 {
   width: 100%;
   height: auto;
-  font-weight: 400;
+  font-weight: 500;
   text-transform: uppercase;
   line-height: 1.1;
   margin-bottom: 1rem;
@@ -148,6 +148,7 @@ a {
 .hero__content h2 {
   font-size: 4.5vw;
   margin-bottom: 1rem;
+  font-weight: 400;
 }
 
 .hero__content p {
@@ -178,7 +179,7 @@ a {
   background-color: #000000;
   color: #ffffff;
   margin-top: -4rem;
-  padding: 6rem 0;
+  padding: 8rem 0;
 }
 
 .projects__container {
@@ -193,20 +194,37 @@ a {
 }
 
 .projects__text {
-  width: 50%;
-  margin-bottom: 4rem;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  margin-bottom: 6rem;
+}
+
+.projects__title {
+  width: 100%;
+  text-align: center;
 }
 
 .projects__paragraph {
-  width: 70%;
+  width: 50%;
 }
 
 .projects__grid {
   width: 100%;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 1fr 1fr;
-      grid-template-columns: 1fr 1fr 1fr;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+  -ms-grid-rows: 30rem 30em;
+      grid-template-rows: 30rem 30em;
 }
 
 .projects__card {
@@ -224,7 +242,7 @@ a {
 }
 
 .projects__card_container {
-  width: 40%;
+  width: 46%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -265,5 +283,16 @@ a {
 .projects__title p {
   font-size: 11px;
   margin-top: -2px;
+}
+
+.projects__description {
+  color: #ffffff;
+  margin-top: 10px;
+}
+
+.projects .item {
+  -ms-flex-item-align: end;
+      -ms-grid-row-align: end;
+      align-self: end;
 }
 /*# sourceMappingURL=style.css.map */
