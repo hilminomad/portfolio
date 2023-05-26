@@ -1,0 +1,14 @@
+.footer {
+  &__contact {
+    margin: 2rem 0;
+  }
+  &__email {
+    margin-bottom: 2rem;
+  }
+  &__social_link {
+    margin: 0.5rem;
+    padding: 0.5rem 1rem;
+    border-radius: 2rem;
+    border: 3px solid #ffffff;
+  }
+}

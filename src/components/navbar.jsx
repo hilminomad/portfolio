@@ -23,7 +23,7 @@ const Navbar = () => {
               <p>Contact</p>
             </a>
           </div>
-          <div className='navbar__link navbar__cta'>
+          <div className='navbar__link navbar__`cta'>
             <a href=''>
               <p>Let's Talk</p>
             </a>
