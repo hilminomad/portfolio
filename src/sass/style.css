@@ -317,6 +317,26 @@ a {
       align-self: end;
 }
 
+.expertise__field_title {
+  height: 16rem;
+  width: 16rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 2px solid #ffffff;
+  border-radius: 50%;
+}
+
+.footer {
+  padding-bottom: 2rem;
+}
+
 .footer__contact {
   margin: 2rem 0;
 }
@@ -330,5 +350,20 @@ a {
   padding: 0.5rem 1rem;
   border-radius: 2rem;
   border: 3px solid #ffffff;
+}
+
+.footer__copy {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 4rem;
+}
+
+.footer__copy p {
+  font-size: 0.75rem;
 }
 /*# sourceMappingURL=style.css.map */

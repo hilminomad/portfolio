@@ -1,4 +1,5 @@
 .footer {
+  padding-bottom: 2rem;
   &__contact {
     margin: 2rem 0;
   }
@@ -10,5 +11,14 @@
     padding: 0.5rem 1rem;
     border-radius: 2rem;
     border: 3px solid #ffffff;
+  }
+  &__copy {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 4rem;
+    p {
+      font-size: 0.75rem;
+    }
   }
 }

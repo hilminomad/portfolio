@@ -23,6 +23,9 @@ const Footer = () => {
             WHATSAPP
           </a>
         </div>
+        <div className='footer__copy'>
+          <p>&copy; 2023 Mohamed Ali Elansari</p>
+        </div>
       </div>
     </section>
   );
