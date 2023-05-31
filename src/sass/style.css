@@ -317,6 +317,41 @@ a {
       align-self: end;
 }
 
+.expertise__content {
+  width: 100%;
+}
+
+.expertise__field {
+  width: 100%;
+  margin-top: 5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 3rem;
+}
+
+.expertise__variation {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+.expertise__text {
+  max-width: 24rem;
+}
+
+.expertise__text p {
+  text-align: center;
+  font-size: 14px;
+}
+
 .expertise__field_title {
   height: 16rem;
   width: 16rem;

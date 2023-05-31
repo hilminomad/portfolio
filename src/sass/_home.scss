@@ -129,6 +129,27 @@
 }
 
 .expertise {
+  &__content {
+    width: 100%;
+  }
+  &__field {
+    width: 100%;
+    margin-top: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+  }
+  &__variation {
+    flex-direction: row-reverse;
+  }
+  &__text {
+    max-width: 24rem;
+    p {
+      text-align: center;
+      font-size: 14px;
+    }
+  }
   &__field_title {
     height: 16rem;
     width: 16rem;

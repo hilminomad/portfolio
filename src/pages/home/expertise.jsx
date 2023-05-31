@@ -18,15 +18,39 @@ const Expertise = () => {
               <div className='expertise__field_title'>
                 <h3>Frontend Development</h3>
               </div>
+              <div className='expertise__text'>
+                <p>
+                  I passionately craft visually stunning websites while
+                  prioritizing clean code and excellent user experience, I
+                  ensure client satisfaction and delivering exceptional software
+                  solutions.
+                </p>
+              </div>
             </div>
-            <div className='expertise__field'>
+            <div className='expertise__field expertise__variation'>
               <div className='expertise__field_title'>
                 <h3>Webflow Development</h3>
+              </div>
+              <div className='expertise__text '>
+                <p>
+                  I passionately craft visually stunning websites while
+                  prioritizing clean code and excellent user experience, I
+                  ensure client satisfaction and delivering exceptional software
+                  solutions.
+                </p>
               </div>
             </div>
             <div className='expertise__field'>
               <div className='expertise__field_title'>
                 <h3>SEO & Content</h3>
+              </div>
+              <div className='expertise__text'>
+                <p>
+                  I passionately craft visually stunning websites while
+                  prioritizing clean code and excellent user experience, I
+                  ensure client satisfaction and delivering exceptional software
+                  solutions.
+                </p>
               </div>
             </div>
           </div>
