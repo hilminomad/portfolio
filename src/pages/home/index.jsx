@@ -1,3 +1,4 @@
+import Banner from '../../components/banner';
 import Expertise from './expertise';
 import Hero from './hero';
 import Projects from './projects';
@@ -6,6 +7,7 @@ const index = () => {
     <>
       <Hero />
       <Expertise />
+      <Banner />
       <Projects />
     </>
   );

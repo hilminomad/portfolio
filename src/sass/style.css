@@ -55,7 +55,7 @@ a {
   text-decoration: none;
 }
 
-.banner {
+.navBack {
   width: 100%;
   height: 4em;
   background-color: #000000;
@@ -366,6 +366,54 @@ a {
           align-items: center;
   border: 2px solid #ffffff;
   border-radius: 50%;
+}
+
+@-webkit-keyframes scroll {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(calc(-250px * 7));
+            transform: translateX(calc(-250px * 7));
+  }
+}
+
+@keyframes scroll {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(calc(-250px * 7));
+            transform: translateX(calc(-250px * 7));
+  }
+}
+
+.banner {
+  height: 4rem;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+  width: auto;
+}
+
+.banner__container {
+  -webkit-animation: scroll 40s linear infinite;
+          animation: scroll 40s linear infinite;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: calc(250px * 7);
+}
+
+.banner__logo-container {
+  width: 250px;
+}
+
+.banner__logo-container img {
+  height: auto;
+  width: 100%;
 }
 
 .footer {

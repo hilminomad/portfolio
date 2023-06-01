@@ -160,3 +160,31 @@
     border-radius: 50%;
   }
 }
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-250px * 7));
+  }
+}
+.banner {
+  height: 4rem;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+  width: auto;
+  &__container {
+    animation: scroll 40s linear infinite;
+    display: flex;
+    width: calc(250px * 7);
+  }
+  &__logo-container {
+    width: 250px;
+    img {
+      height: auto;
+      width: 100%;
+    }
+  }
+}

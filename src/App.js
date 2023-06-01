@@ -4,14 +4,14 @@ import Portfolio from './pages/portfolio';
 import About from './pages/about';
 import Contact from './pages/contact';
 import Navbar from './components/navbar';
-import Banner from './components/banner';
 import Footer from './components/footer';
+import NavBack from './components/navBack';
 
 function App() {
   return (
     <div className='App'>
       <BrowserRouter>
-        <Banner />
+        <NavBack />
         <Navbar />
         <Routes>
           <Route path='/' element={<Home />} />
