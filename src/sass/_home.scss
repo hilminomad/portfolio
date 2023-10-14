@@ -2,20 +2,28 @@
   &__section {
     width: 100%;
     margin: 6rem 0 0 0;
+    display: flex;
+    justify-content: center;
   }
   &__container {
+    min-height: 600px;
+    max-width: 1440px;
     padding: 0 2em;
     display: flex;
     flex-direction: column;
+    @include  breakpoint-down(small){
+      padding: 0 20px;
+    }
+    
   }
   &__content {
     width: 100%;
     display: flex;
     justify-content: space-between;
     h2 {
-      font-size: 4.5vw;
+      font-size: 2rem;
       margin-bottom: 1rem;
-      font-weight: 400;
+      font-weight: 500;
     }
     p {
       width: 65%;
@@ -23,15 +31,36 @@
       color: #111111;
       font-weight: 400;
     }
+    @include  breakpoint-down(medium){
+      flex-direction: column;
+      text-align: center;
+      align-items: center;
+      h2 {
+        font-size: 1.2rem;
+        margin-bottom: 1rem;
+      }
+      p {
+        width: 90%;
+        font-size: 1rem;      
+      }
+    }
+    
   }
   &__text {
+    display: flex;
+    flex-direction: column;
     width: 60%;
+    @include  breakpoint-down(medium){
+      align-items: center;
+      width: 100%;
+    }
   }
   &__icons {
     width: 30%;
 
     display: flex;
     justify-content: space-around;
+    gap: 2rem;
     margin: 2rem 0;
     img {
       width: 4rem;
@@ -47,6 +76,17 @@
       position: relative;
       z-index: 3;
     }
+    @include  breakpoint-down(medium)
+    {
+      width: 70%;
+      img {
+        margin: 0;
+      }
+
+    }
+    @include  breakpoint-down(small){
+      width : 100%;
+    }
   }
 }
 
@@ -56,32 +96,73 @@
   color: #ffffff;
   margin-top: -4rem;
   padding: 8rem 0;
+  display: flex;
+  justify-content: center;
   &__container {
     padding: 0 2em;
+    width: 100%;
+    max-width: 1440px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    @include  breakpoint-down(small){
+      padding: 0 20px;
+    }
   }
   &__text {
     width: 100%;
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
+    //align-items: flex-end;
     margin-bottom: 6rem;
   }
   &__title {
     width: 100%;
     text-align: center;
   }
+  &__subtitle_container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    @include  breakpoint-down(medium){
+      flex-direction: column;
+      gap: 1rem;
+    }
+  }
+  &__vector_container{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    @include  breakpoint-down(medium){
+      width: 100%;
+    }
+  }
   &__paragraph {
     width: 50%;
+    max-width: 420px;
     font-size: 1.2rem;
+    @include  breakpoint-down(medium){
+      width: 100%;
+      text-align: center;
+      font-size: 14px;
+    }
   }
   &__grid {
     width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 30rem 30em;
+    grid-template-rows: 30rem 30rem;
+    @include  breakpoint-down(medium){
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 20rem 20rem;
+      gap : 2rem;
+    }
+    @include  breakpoint-down(small){
+      grid-template-columns: 1fr;
+      grid-template-rows: auto;
+      gap : 4rem;
+    }
   }
   &__card {
     width: 100%;
@@ -95,6 +176,9 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    @include  breakpoint-down(medium){
+      width: 60%;
+    }
   }
   &__card_img {
     width: 100%;
@@ -103,6 +187,7 @@
       width: 100%;
       height: auto;
       border-radius: 20%;
+      box-shadow: rgba(255, 255, 255, 0.12) 0px 1px 3px, rgba(255, 255, 255, 0.24) 0px 1px 2px;
     }
   }
   &__title {
@@ -124,7 +209,11 @@
     font-size: 12px;
   }
   .item {
-    align-self: end;
+    align-self: end; 
+    @include  breakpoint-down(medium){
+      align-self: start;
+    }
+
   }
 }
 
@@ -139,15 +228,26 @@
     justify-content: center;
     align-items: center;
     gap: 3rem;
+    @include  breakpoint-down(medium){
+      flex-direction: column;
+      gap: 1.5rem;
+
+    }
   }
   &__variation {
     flex-direction: row-reverse;
+    @include  breakpoint-down(medium){
+      flex-direction: column;
+    }
   }
   &__text {
     max-width: 24rem;
     p {
       text-align: center;
       font-size: 14px;
+      @include  breakpoint-down(medium){
+        font-size: 12px;
+      }
     }
   }
   &__field_title {

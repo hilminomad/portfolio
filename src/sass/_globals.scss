@@ -16,6 +16,9 @@
 body {
   font-size: 1em;
   font-family: Roboto Mono;
+  @include  breakpoint-down(medium){
+    font-size: 12px;
+  }
 }
 
 h1,
@@ -26,13 +29,21 @@ h2 {
 h1 {
   width: 100%;
   height: auto;
-  font-size: 7.6vw;
+  font-size: 7.4vw;
   text-transform: uppercase;
   font-weight: 500;
   line-height: 1.1;
   margin-bottom: 2rem;
   position: relative;
   z-index: 4;
+  @include  breakpoint-down(medium){
+    font-size: 7vw;
+    text-align: center;
+  }
+  @include  breakpoint-up(xlarge){
+    font-size: 7rem;
+  }
+
 }
 
 h2 {
@@ -43,6 +54,12 @@ h2 {
   line-height: 1.1;
   margin-bottom: 1rem;
   font-size: 4rem;
+  @include  breakpoint-down(medium){
+    font-size: 3rem;
+  }
+  @include  breakpoint-down(small){
+    font-size: 2rem;
+  }
 }
 
 p {
@@ -53,3 +70,20 @@ a {
   color: #ffffff;
   text-decoration: none;
 }
+
+
+  .cursor{
+    height: 32px;
+    width: 32px;
+    border-radius: 50%;
+    border: 2px solid #9A3B3B;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    pointer-events: none;
+    @include  breakpoint-down(medium){
+      display: none;
+    }
+  }
+

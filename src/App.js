@@ -6,11 +6,13 @@ import Contact from './pages/contact';
 import Navbar from './components/navbar';
 import Footer from './components/footer';
 import NavBack from './components/navBack';
+import Cursor from './components/cursor';
 
 function App() {
   return (
     <div className='App'>
       <BrowserRouter>
+        <Cursor />
         <NavBack />
         <Navbar />
         <Routes>
