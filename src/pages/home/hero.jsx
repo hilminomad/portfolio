@@ -22,7 +22,7 @@ const Hero = () => {
               <p>
                 I convert storytelling into websites. I aim to create visually
                 appealing digital experiences that assist you in achieving your
-                business goals.
+                business goals. 
               </p>
               <div  className='hero__icons'>
                 <a  onMouseEnter={textEnter} onMouseLeave={Leave} href='https://github.com/hilminomad' target='blank'>
