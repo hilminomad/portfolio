@@ -53,7 +53,7 @@ const Projects = () => {
             </a>
           </div>
           <div  className='projects__card item'>
-            <a onMouseEnter={buttonEnter} onMouseLeave={Leave} href=''target='blank' className='projects__card_container'>
+            <a onMouseEnter={buttonEnter} onMouseLeave={Leave} href='https://actschool.ma/ouino'target='blank' className='projects__card_container'>
               <div className='projects__card_img'>
                 <img
                   src='https://res.cloudinary.com/dvvsyxugn/image/upload/v1697283757/ouino_cntggo.png'
